@@ -1,6 +1,6 @@
-cmake_minimum_required(VERSION 3.15)
-project(DeskCalculator)
+cmake_minimum_required(VERSION 3.12)
+project(Proyecto3)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 
-add_executable(DeskCalculator main.cpp catch.hpp)
+add_executable(Proyecto3 main.cpp Parser.h Metodos_Generales.h Symbol.h)
