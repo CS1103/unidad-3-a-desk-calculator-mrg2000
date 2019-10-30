@@ -1,19 +1,10 @@
 #include <iostream>
 #include <sstream>
 #include "parser.h"
+#include "Driver.h"
 using namespace std;
 using namespace Table;
 
-Lexer::Token_stream ts {&cin};
-
-void calculate(){
-    while(true){
-        ts.get();
-        if (ts.current().kind == Lexer::Kind::END) break;
-        if (ts.current().kind == Lexer::Kind::PRINT) continue;
-        std::cout << expr(false) << '\n';
-    }
-}
 
 int main(int argc, char* argv[]) { 
     istream* input;

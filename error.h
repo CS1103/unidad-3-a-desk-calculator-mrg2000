@@ -4,7 +4,7 @@
 #include<string>
 
 int no_of_errors;
-double error(const std::string& s) { 
+double error(const std::string& s) {
     ++no_of_errors;
     std::cerr << "Error: " << s << '\n';
     return 1;
